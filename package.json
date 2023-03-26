@@ -1,0 +1,23 @@
+{
+  "name": "google-drive-api-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathanKr/google-drive-api-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NathanKr/google-drive-api-playground/issues"
+  },
+  "homepage": "https://github.com/NathanKr/google-drive-api-playground#readme",
+  "dependencies": {
+    "@googleapis/docs": "^2.0.1"
+  }
+}
