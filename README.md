@@ -19,8 +19,10 @@ This setup is the same as for <a href='https://github.com/NathanKr/gmail-api-poc
 
 <h2>Points of interests</h2>
 <ul>
-<li>the first few runs gave error regarding the api . may be it need some time after the project creation</li>
+<li>index_google_docs.js invokes the google docs api. The file runs without error provided you enable the google docs api for the project. </li>
 </ul>
+
+
 
 <h2>Reference</h2>
 <a href='https://github.com/googleapis/google-api-nodejs-client#google-apis-nodejs-client'>google-apis-nodejs-client</a>
