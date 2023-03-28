@@ -3,13 +3,13 @@
 const { GoogleAuth } = require("google-auth-library");
 const { google } = require("googleapis");
 const fs = require("fs");
-const path = require("path");
-const SECRET_FILE = "modern-voice-381809-83aa5dfaf559.json";
-const jsonCredentialsPath = path.join(__dirname, "secret", SECRET_FILE);
+const {getJsonCredentialsPath} = require('./utils')
+
+// --- Create a file in the application data folder
 
 async function run() {
   const auth = new GoogleAuth({
-    keyFilename: jsonCredentialsPath,
+    keyFilename: getJsonCredentialsPath(),
     scopes: "https://www.googleapis.com/auth/drive.appdata",
   });
   const drive = google.drive({ version: "v3", auth });
@@ -22,7 +22,7 @@ async function run() {
     body: fs.createReadStream("files/config.json"),
   };
   const file = await drive.files.create({
-    resource: fileMetadata,
+    resource: fileMetadata, // ---- where is resoure defined as argument to create ??
     media: media,
     fields: "id",
   });

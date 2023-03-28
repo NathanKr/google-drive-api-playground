@@ -23,6 +23,10 @@ This setup is the same as for <a href='https://github.com/NathanKr/gmail-api-poc
 </ul>
 
 
+<h2>Open issues</h2>
+<ul>
+<li>not clear where resource is defined in drive.files.create (index.js)</li>
+</ul>
 
 <h2>Reference</h2>
 <a href='https://github.com/googleapis/google-api-nodejs-client#google-apis-nodejs-client'>google-apis-nodejs-client</a>
